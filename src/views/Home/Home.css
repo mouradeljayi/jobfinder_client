@@ -1,0 +1,69 @@
+.hero-image {
+    background-image: url("../../assets/imgs/pieces-blue-stationery.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-header {
+    text-align: center;
+    font-size: 30px;
+    color: var(--light); 
+    max-width: 80%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.search-container {
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.search-input {
+    flex: 1;
+    outline: none;
+    border: 4px solid var(--primary);
+    padding: 12px;
+    padding-left: 30px;
+    font-size: 18px;
+    width: 500px;
+}
+
+.search-btn {
+    background-color: var(--primary);
+    color: var(--light);
+    border: 4px solid #0056b3;
+    padding: 12px 15px;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.search-icon {
+    position: relative;
+    left: 30px;
+    top: 4px;
+    font-size: 20px;
+}

@@ -1,0 +1,22 @@
+:root {
+    /* Brand Colors */
+    --primary: #0460D9;      /* Primary color for buttons, links, etc. */
+    --secondary: #6c757d;    /* Secondary color for borders, secondary text, etc. */
+  
+    /* Status Colors */
+    --success: #28a745;      /* Success color for indicating positive actions */
+    --info: #17a2b8;         /* Info color for providing informational feedback */
+    --warning: #ffc107;      /* Warning color for alerts or notifications */
+    --danger: #dc3545;       /* Danger color for indicating errors or critical messages */
+  
+    /* Neutral Colors */
+    --light: #f8f9fa;        /* Light background color */
+    --dark: #343a40;         /* Dark text color */
+    --white: #ffffff;        /* White color for text or elements */
+    --gray: #adb5bd;         /* Gray color for secondary text, borders, etc. */
+  
+    /* Custom Colors */
+    --accent: #6f42c1;       /* Accent color for special highlights or elements */
+    --background: #f5f5f5;   /* Overall background color */
+  }
+  

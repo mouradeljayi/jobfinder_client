@@ -1,0 +1,41 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+.meta-title {
+    text-align: center;
+    margin-top: 20px;
+}
+.choice-card {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    width: 500px;
+    padding: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.card:hover .register-icon {
+    color: var(--light); 
+}
+
+.register-icon {
+    font-size: 60px;
+    margin: 20px;
+    color: var(--primary);
+}

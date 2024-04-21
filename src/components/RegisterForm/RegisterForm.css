@@ -1,0 +1,96 @@
+.flowing-section {
+    z-index: 2;
+    padding: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    right: 2%;
+    bottom: 4%;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);   
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.form-section {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 20px; /* Spacing between grid items */
+  }
+
+  @media (max-width: 768px) {
+    .form-section {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .close-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 4%;
+    right: 2%;
+    font-size: 20px;
+  }
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .type {
+    color: var(--primary);
+  }
+
+  
+  .form-section input {
+    padding: 10px;
+    border: 2px solid var(--dark);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+  }
+
+.form-section select {
+    padding: 10px;
+    border: 2px solid var(--dark);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    appearance: none;
+  }
+  
+  /* Optional: Use a custom dropdown arrow (may not work in all browsers) */
+  .form-section select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 30px;
+  }
+
+  .submit-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+

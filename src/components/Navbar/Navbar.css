@@ -1,0 +1,34 @@
+.navbar {
+  background-color: var(--light);
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link {
+  color: var(--dark);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.nav-link.active {
+  color: #f00;
+}
