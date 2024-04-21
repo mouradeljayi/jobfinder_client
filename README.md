@@ -24,7 +24,7 @@ JobFinder is a web application developed using Laravel API and React JS, that al
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mouradeljayi/jobfinder-client.git
+   git clone https://github.com/mouradeljayi/jobfinder_client.git
 
 2. Navigate into the project directory:
    ```bash
