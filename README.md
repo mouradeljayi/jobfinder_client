@@ -13,9 +13,9 @@ JobFinder is a web application developed using Laravel API and React JS, that al
 
 - Laravel API
 - React JS
-- Framer Motion
 - React Router
 - React Hook Form
+- Framer Motion
 - React Icons
 - React Spinners
 - React Toastify
