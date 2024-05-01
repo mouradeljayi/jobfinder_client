@@ -32,3 +32,7 @@
 .nav-link.active {
   color: #f00;
 }
+
+.home-icon {
+  vertical-align: text-top;
+}
