@@ -1,0 +1,74 @@
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobs-search {
+    outline: none;
+    border: 2px solid var(--primary);
+    padding: 8px;
+    font-size: 14px;
+    width: 300px;
+}
+
+.jobssearch-btn {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 10px 15px;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.filter-btn {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.number-filter {
+    display: flex;
+    align-items: center;
+}
+
+.number-card {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 10px 10px;
+    display: inline-block;
+    border: none;
+    font-size: 14px;   
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.jobs-section {
+    margin-top: 40px;
+    display: grid;
+    border-top: 1px solid var(--dark);
+    padding-top: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjust gap between cards as needed */
+}
+
