@@ -1,0 +1,36 @@
+/* CustomCard.css */
+
+.custom-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    border-left: 4px solid var(--primary);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .custom-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);   
+
+  }
+  
+  .custom-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h4 {
+    margin: 0;
+  }
+  
+  .card-content p {
+    margin: 10px 0;
+  }
+  
