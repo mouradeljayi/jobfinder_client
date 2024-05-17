@@ -9,7 +9,7 @@ import FilterJobs from '../../components/FilterJobs/FilterJobs';
 function JobsListing() {
 
   const [selectedNumber, setSelectedNumber] = useState(null);
-  const [isFilterOpen, setIsFilterOpen] = useState(false); // State to track filter visibility
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
 
   const handleNumberSelect = (number) => {
@@ -20,7 +20,6 @@ function JobsListing() {
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
-    // Fetch data for the new page here
   };
 
   const toggleFilter = () => {
@@ -31,32 +30,30 @@ function JobsListing() {
 
   return (
     <div className='container-fluid '>
-      {isFilterOpen && <FilterJobs isFilterOpen={isFilterOpen} onClose={toggleFilter}/>}
+      {isFilterOpen && <FilterJobs isFilterOpen={isFilterOpen} onClose={toggleFilter} />}
       <h3>Nos offres d'emploi</h3>
       <section className='filter-container mt-20'>
         <div>
-          <button className='filter-btn' onClick={toggleFilter}><CiFilter className='icon'/> Filtrer</button>
+          <button className='filter-btn' onClick={toggleFilter}><CiFilter className='icon' /> Filtrer</button>
         </div>
         <div>
           <input type="text" placeholder="Rechercher par titre, type, salaire..." className="jobs-search" />
           <button className="jobssearch-btn">
-            <CiSearch className='icon'/> Chercher
+            <CiSearch className='icon' /> Chercher
           </button>
         </div>
         <div className='number-filter'>
-        <p>Filtrer par : </p>
-        <CustomSelect options={numbers} onSelect={handleNumberSelect} />
-         <p>éléments</p>
+          <p>Filtrer par : </p>
+          <CustomSelect options={numbers} onSelect={handleNumberSelect} />
+          <p>éléments</p>
         </div>
       </section>
 
       <section className='jobs-section'>
-      <JobCard />
-      <JobCard />
-      <JobCard />
-    </section>
+        <JobCard />
+      </section>
 
-    <Pagination totalPages={10} onPageChange={handlePageChange} />
+      <Pagination totalPages={10} onPageChange={handlePageChange} />
 
 
     </div>
