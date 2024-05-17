@@ -17,6 +17,15 @@
   background-color: #f8f9fa;
 }
 
+.container-fluid {
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+}
+
 @media (max-width: 768px) {
   .container {
       width: 90%;
@@ -26,7 +35,7 @@
 * {
   margin: 0;
   padding: 0;
- font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {

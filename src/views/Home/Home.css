@@ -2,13 +2,13 @@
     background-image: url("../../assets/imgs/pieces-blue-stationery.jpg");
     background-size: cover;
     background-position: center;
-    height: 88vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     position: relative;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
 }
 
 .overlay {
@@ -18,6 +18,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(8px);
 }
 
 .hero-header {

@@ -9,7 +9,7 @@
     border: 2px solid var(--primary);
     padding: 8px;
     font-size: 14px;
-    width: 300px;
+    width: 400px;
 }
 
 .jobssearch-btn {
@@ -25,7 +25,7 @@
     transition: background-color 0.3s ease;
 }
 
-.search-btn:hover {
+.jobssearch-btn:hover {
     background-color: #0056b3;
 }
 
@@ -66,7 +66,7 @@
 .jobs-section {
     margin-top: 40px;
     display: grid;
-    border-top: 1px solid var(--dark);
+    border-top: 1px solid var(--secondary);
     padding-top: 20px;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 20px; /* Adjust gap between cards as needed */
