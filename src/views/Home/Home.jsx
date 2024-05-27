@@ -1,9 +1,11 @@
+import FamousEmployers from '../../components/FamousEmployers/FamousEmployers';
 import './Home.css';
 import { CiSearch } from "react-icons/ci";
 
 function Home() {
 
     return (
+        <>
         <div className="hero-image">
             <div className="overlay"></div>
             <p className='hero-header'>JobFinder est une application qui met en relation les employeurs avec leurs futurs collaborateurs</p>
@@ -15,6 +17,9 @@ function Home() {
                 </button>
             </div>
         </div>
+
+        <FamousEmployers />
+        </>
     )
 }
 
