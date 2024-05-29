@@ -1,4 +1,5 @@
 import FamousEmployers from '../../components/FamousEmployers/FamousEmployers';
+import LatestJobs from '../../components/LatestJobs/LatestJobs';
 import './Home.css';
 import { CiSearch } from "react-icons/ci";
 
@@ -19,6 +20,7 @@ function Home() {
         </div>
 
         <FamousEmployers />
+        <LatestJobs />
         </>
     )
 }
