@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-import { CiLogin, CiUser } from "react-icons/ci";
+import { CiLogin } from "react-icons/ci";
 import { PiUserCirclePlusLight } from "react-icons/pi";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
@@ -13,7 +13,7 @@ function Navbar({ isLogged }) {
   return (
     <nav className="navbar">
       <Link to="/" className="logo-nav">
-        JobFinder
+        JobLink
       </Link>
       <div>
         <Link to="/" className="nav-link">

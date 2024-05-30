@@ -1,10 +1,17 @@
+.parent-container {
+    margin-top: 100px;
+    justify-content: center;  /* Centers the child horizontally */
+}
+
 .title {
     text-align: center;
     font-weight: bold;
+    font-size: 25px;
 }
 .meta-title {
     text-align: center;
     margin-top: 20px;
+    font-size: 20px;
 }
 .choice-card {
     display: flex;
@@ -14,7 +21,12 @@
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 500px;
+    height: 200px;
     padding: 50px;
     text-transform: uppercase;
     overflow: hidden;
@@ -23,6 +35,10 @@
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s ease;
+}
+
+.card p {
+    font-size: 20px;
 }
 
 .card:hover {
@@ -36,6 +52,6 @@
 
 .register-icon {
     font-size: 60px;
-    margin: 20px;
+    margin-bottom: 20px;
     color: var(--primary);
 }
