@@ -90,6 +90,20 @@
   .submit-btn:hover {
     background-color: #0056b3;
   }
+
+  .google {
+    padding: 12px 20px;
+    border: none;
+    background-color: #DB4437;    ;
+    color: var(--light);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .google:hover {
+    background-color: #f11c08;
+  }
   
 
   

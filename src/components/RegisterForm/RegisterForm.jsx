@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './RegisterForm.css';
-import { FaPlus } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
+import { FaCheck, FaTimes, FaGoogle } from "react-icons/fa";
+
 import GlobalSpinner from '../common/GlobalSpinner';
 import useEscape from '../../hooks/useEscape';
 
@@ -59,7 +59,10 @@ function RegisterForm({ accountType, onCloseForm }) {
           <input type="password" className='' placeholder='Confimrer le mot de passe' />
 
           <button className='submit-btn'>
-            <FaPlus className='icon' /> Créer mon compte
+            Créer mon compte  <FaCheck className='icon' />
+          </button>
+          <button className='google'>
+            Se connecter avec Google <FaGoogle className='icon' />
           </button>
         </div>
 

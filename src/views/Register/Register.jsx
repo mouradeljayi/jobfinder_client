@@ -18,7 +18,7 @@ function Register() {
   };
 
   return (
-    <div className="mt-50">
+    <div className="parent-container">
       <h3 className="title">Créez votre compte et bénéficiez de nos riches fonctionnalités</h3>
       <p className="meta-title">Choisissez votre type de compte</p>
       <section className="container">

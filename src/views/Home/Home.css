@@ -1,16 +1,16 @@
 .hero-image {
-    background-image: url("/imgs/pieces-blue-stationery.jpg");
+    /* background-image: url("/imgs/pieces-blue-stationery.jpg"); */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;  */
     position: relative;
     overflow: hidden;
 }
-
+/* 
 .overlay {
     position: absolute;
     top: 0;
@@ -19,20 +19,32 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     filter: blur(8px);
+} */
+
+.online_resume {
+    position: absolute;
+    left: -100px;
+    top: -60px;
 }
 
 .hero-header {
     text-align: center;
     font-size: 30px;
-    color: var(--light); 
-    max-width: 80%;
+    width: 50%;
+    color: var(--primary); 
     font-weight: bold;
+    right: 5%;
+    top: 20%;
+    position: absolute;
     z-index: 1;
 }
 
 .search-container {
     margin-top: 50px;
     z-index: 1;
+    position: absolute;
+    right: 8%;
+    top: 40%;
 }
 
 .search-input {
@@ -42,14 +54,14 @@
     padding: 12px;
     padding-left: 30px;
     font-size: 18px;
-    width: 500px;
+    width: 450px;
 }
 
 .search-btn {
     background-color: var(--primary);
     color: var(--light);
-    border: 4px solid #0056b3;
-    padding: 12px 15px;
+    padding: 15px 25px;
+    border: none;
     display: inline-block;
     font-size: 18px;
     letter-spacing: 0.2px;
@@ -67,4 +79,41 @@
     left: 30px;
     top: 4px;
     font-size: 20px;
+}
+
+.animated-button {
+    align-items: center;
+    position: absolute;
+    margin-top: 50px;
+    padding: 10px 25px;
+    font-size: 22px;
+    bottom: 200px;
+    right: 22%;
+    color: #fff;
+    background-color: var(--light);
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    color: var(--primary);
+    transition: background-color 0.3s;
+    overflow: hidden;
+}
+
+.animated-button:hover {
+    background-color: #0056b3;
+    color: var(--light);
+}
+
+.arrow-icon {
+    margin-left: 10px;
+    display: inline-block;
+    animation: bounce 1s infinite; /* Continuous bounce animation */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px); /* Adjust bounce height as needed */
+    }
 }

@@ -4,7 +4,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const FamousEmployers = () => {
   return (
-    <>
+    <div id="famous-employers">
       <h2 className='famouscompanies-header'>LES ENTREPRISES DE LA SEMAINE</h2>
 
       <div className='grid-famouscompanies'>
@@ -46,7 +46,7 @@ const FamousEmployers = () => {
       </button>
 
 
-    </>
+    </div>
   )
 }
 
