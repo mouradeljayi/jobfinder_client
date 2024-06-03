@@ -1,7 +1,6 @@
 import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import { useState, Suspense } from "react";
 import { appRoutes } from "./routes";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   const [username, setUsername] = useState("");
@@ -41,7 +40,6 @@ function App() {
           })}
         </Routes>
       </Suspense>
-      <Footer />
 
     </>
   );

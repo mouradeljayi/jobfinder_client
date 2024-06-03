@@ -5,6 +5,7 @@ import Login from "./views/Login/Login"
 import Register from "./views/Register/Register";
 import NotFound from "./views/NotFound/NotFound";
 import JobsListing from "./views/JobsListing/JobsListing";
+import JobDetail from "./views/JobDetail/JobDetail";
 
 
 export const appRoutes = [
@@ -26,6 +27,11 @@ export const appRoutes = [
   {
     path: "/jobs",
     component: JobsListing,
+    requiresAuth: false,
+  },
+  {
+    path: "/jobdetail",
+    component: JobDetail,
     requiresAuth: false,
   },
   {

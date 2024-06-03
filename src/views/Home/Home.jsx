@@ -5,6 +5,8 @@ import './Home.css';
 import { CiSearch } from "react-icons/ci";
 import { FaArrowDown } from "react-icons/fa";
 import PublicAnalytics from '../../components/PublicAnalytics/PublicAnalytics';
+import Footer from "../../components/Footer/Footer";
+
 
 function Home() {
 
@@ -36,6 +38,8 @@ function Home() {
             <FamousEmployers />
             <LatestJobs />
             <PublicAnalytics />
+            <Footer />
+
         </>
     )
 }
