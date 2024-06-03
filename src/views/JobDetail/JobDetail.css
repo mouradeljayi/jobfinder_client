@@ -1,0 +1,116 @@
+.jobdetail-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+.job-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.jobtitle {
+    font-size: 30px;
+}
+
+.metajobtitle {
+    margin-top: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    cursor: pointer;  
+}
+
+.metajobtitle:hover {
+    color: #0056b3;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 1.2em;
+    background-color: var(--primary);
+    margin: 0 8px; /* Adjust the margin around the line */
+}
+
+.jobdate {
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+.job-metainfo {
+    margin-top: 16px;
+    display: flex;
+}
+.applybtn {
+    font-size: 16px;
+    padding: 10px 25px; 
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+    border: none;
+    color: var(--light);
+    transition: background-color 0.3s;
+}
+
+.applybtn:hover {
+    background-color: #0056b3;
+}
+
+.jobbtn {
+    font-size: 16px;
+    padding: 10px 25px; 
+    color: #fff;
+    background-color: var(--light);
+    cursor: pointer;
+    border: 1px solid var(--gray);
+    color: var(--dark);
+    margin-left: 10px;
+    transition: background-color 0.3s; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.jobbtn:hover {
+    background-color: var(--gray);
+}
+
+.jobhearticon {
+    font-size: 24px;
+}
+
+.jobdetails {
+    margin-top: 40px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+
+.detailjob {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.descriptionjob {
+    margin-top: 30px;
+    /* border-top: 1px solid var(--gray); */
+    padding-top: 20px;
+    width: 90%;
+}
+
+.descriptionjob p {
+    margin-top: 20px;
+}
+.descriptionjob ul {
+    width: 80%;
+    margin-left: 40px;
+}
+.descriptionjob li {
+    padding-top: 20px;
+    
+}
