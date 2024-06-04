@@ -96,6 +96,8 @@
     color: var(--primary);
     transition: background-color 0.3s;
     overflow: hidden;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .animated-button:hover {
