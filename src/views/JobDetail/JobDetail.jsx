@@ -1,9 +1,20 @@
 import './JobDetail.css'
-import { FaPrint, FaShareAlt } from 'react-icons/fa'
+import { FaPrint, FaShareAlt, FaPhone, FaBuilding } from 'react-icons/fa'
 import { CiHeart } from "react-icons/ci";
-import { IoMdHeart } from "react-icons/io";
+import { IoMdHeart, IoMdOpen } from "react-icons/io";
+import { useInView } from 'react-intersection-observer';
+
 
 const JobDetail = () => {
+
+    const { ref, inView } = useInView({
+        threshold: 0,
+    });
+
+    // const { ref1, inView1 } = useInView({
+    //     threshold: 0,
+    // });
+
     return (
         <div className='jobdetail-container'>
             <section className='job-grid'>
@@ -12,16 +23,18 @@ const JobDetail = () => {
                     <h1 className='jobtitle'>Assistant(e) de Support opérationnel et de Projets</h1>
                     <h4 className='metajobtitle'>
                         Dell for Shopping GIE
-                        <span class='vertical-line'></span>
+                        <span className='vertical-line'></span>
                         <span className='jobdate'> Publiée le 03/06/2024</span>
                     </h4>
 
-                    <div className='job-metainfo'>
+                    <div className={`job-metainfo ${inView ? '' : 'fixed'}`} >
                         <button className='applybtn'>Postuler maintenant</button>
-                        <button className='jobbtn'><FaPrint  className='icon'/></button>
+                        <button className='jobbtn'><FaPrint className='icon' /></button>
                         <button className='jobbtn'><FaShareAlt className='icon' /> Partager</button>
                         <button className='jobbtn'><CiHeart className='icon jobhearticon' /></button>
                     </div>
+
+                    <div ref={ref}></div>
 
                     <div className='jobdetails'>
                         <div className='detailjob'>
@@ -29,27 +42,27 @@ const JobDetail = () => {
                             <p>Bac +3</p>
                         </div>
 
-                        <div  className='detailjob'>
+                        <div className='detailjob'>
                             <h4>Expérience</h4>
                             <p>Junior (1-2 ans)</p>
                         </div>
 
-                        <div  className='detailjob'>
-                            <h4>Spécialité</h4>
+                        <div className='detailjob'>
+                            <h4>Spécialisation</h4>
                             <p>Internet & E-Commerce</p>
                         </div>
-                       
-                        <div  className='detailjob'>
+
+                        <div className='detailjob'>
                             <h4>Type de contrat</h4>
                             <p>CDI</p>
                         </div>
 
-                        <div  className='detailjob'>
+                        <div className='detailjob'>
                             <h4>Salaire</h4>
                             <p>£ 7000 NET / mois</p>
                         </div>
 
-                        <div  className='detailjob'>
+                        <div className='detailjob'>
                             <h4>Dernier délais</h4>
                             <p>le 03/06/2024</p>
                         </div>
@@ -101,10 +114,21 @@ const JobDetail = () => {
 
 
                 </div>
-                
+
 
                 <div className='job-sidebar'>
-                    other content
+                    <div className={`company-card ${inView ? '' : 'fixed'}`}>
+                        <img src="https://static.vecteezy.com/ti/vecteur-libre/p3/20190669-dell-logo-vecteur-dell-icone-gratuit-vecteur-gratuit-vectoriel.jpg" alt="" />
+                        <div className='companyinfo'>
+                            <h3>Dell for Shopping GIE</h3>
+                            <p> <FaBuilding className='icon companyicon' /> rue Erasme, 14
+                                1468 Luxembourg
+                                Luxembourg</p>
+                            <p> <FaPhone className='icon companyicon' /> +352 26430094</p>
+                            <p><a href='https://www.letzshop.lu' target='_black'> <IoMdOpen  className='icon companyicon'/> https://www.letzshop.lu</a></p>
+                            <button>Consulter le profil de l'entreprise</button>
+                        </div>
+                    </div>
                 </div>
 
             </section>
