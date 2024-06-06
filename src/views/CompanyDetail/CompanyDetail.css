@@ -1,0 +1,79 @@
+.companydetail-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+.companydetail-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.companydetail-header {
+    display: flex;
+    font-size: 20px;
+    align-items: end;
+}
+
+.companydetail-header img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.companydetail-header button {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 10px 15px; 
+    color: #fff;
+    background-color: var(--secondary);
+    cursor: pointer;
+    border: none;
+    color: var(--light);
+    transition: background-color 0.3s;
+}
+
+.companydetail-header button:hover {
+    background-color: #646262;
+}
+
+.company-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.companystar {
+    font-size: 25px;
+    color: var(--warning);
+}
+
+.companydetail-card {
+    margin-top: 100px;
+    width:  300px;
+    height: 250px;
+    padding: 40px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--gray);
+}
+
+.companydetail-card p {
+    margin-top: 20px;
+}
+
+.companyadress {
+    display: flex;
+}
+
+
+.companydetail-card.fixed {
+    position: fixed;   
+}
+.companydetail-icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
