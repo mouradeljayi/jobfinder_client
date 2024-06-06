@@ -11,10 +11,6 @@ const JobDetail = () => {
         threshold: 0,
     });
 
-    // const { ref1, inView1 } = useInView({
-    //     threshold: 0,
-    // });
-
     return (
         <div className='jobdetail-container'>
             <section className='job-grid'>
